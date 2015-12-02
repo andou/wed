@@ -1,0 +1,53 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "a2b985e7afa54767c2590e124263da31",
+    "content-hash": "0eb6cdb41610caaf21320877ac5a061b",
+    "packages": [
+        {
+            "name": "andou/inireader",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andou/inireader.git",
+                "reference": "b927c73ec5ca49bdfe3a8c81ac8dc3ef6c649100"
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "Mit License"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Pastorino",
+                    "email": "antonio.pastorino@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/andou/inireader/issues"
+            },
+            "time": "2014-09-25 14:08:56"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3.0"
+    },
+    "platform-dev": []
+}

@@ -1,0 +1,28 @@
+{
+  "name": "andou/wed",
+  "description": "",
+  "license": "Mit License",
+  "authors": [
+    {
+      "name": "Antonio Pastorino",
+      "email": "antonio.pastorino@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "andou/inireader": "*"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/andou/inireader.git"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "minimum-stability": "dev"
+}

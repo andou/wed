@@ -1,0 +1,2 @@
+[logs]
+write_folder = 'path/to/your/folder'
