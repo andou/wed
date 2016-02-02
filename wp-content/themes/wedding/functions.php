@@ -174,7 +174,7 @@ if (function_exists("register_field_group")) {
                       'key' => 'field_56b0b121ca41f',
                       'label' => 'Descrizione Titolo',
                       'name' => 'hp_boxes_descrizione_titolo',
-                      'type' => 'text',
+                      'type' => 'textarea',
                       'conditional_logic' => array(
                           'status' => 1,
                           'rules' => array(
