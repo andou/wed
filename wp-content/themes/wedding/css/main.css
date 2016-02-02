@@ -2468,6 +2468,12 @@ button.style3:hover,
     padding: 2em 1.25em 2em 1.25em !important;
   }
 
+
+  .box.style1 .inner-noimage {
+    margin: 0 !important;
+    padding: 2em 1.25em 2em 1.25em !important;
+  }
+
   .box.style2 .inner .row:before {
     display: none;
   }
