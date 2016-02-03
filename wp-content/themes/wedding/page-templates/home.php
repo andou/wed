@@ -96,20 +96,21 @@ $counter = 0;
 <article class="container box style3">
   <header>
     <h2>Conferma</h2>
-    <p>Scrivete qui il vostro nome, la mail, il numero di persone che parteciperanno al ricevimento, specificando: quanti adulti, quanti bambini (indicando l’età), eventuali intolleranze o scelte alimentari. Questo vale come conferma ufficiale.</p>
+    <p>Scrivete qui il vostro nome, la mail, il numero di persone che parteciperanno al ricevimento, specificando nelle note: quanti adulti, quanti bambini (indicando l’età), eventuali intolleranze o scelte alimentari.</p>
   </header>
-  <form method="post" action="#">
+  <form id="confirm" method="post" action="submit.php">
     <div class="row 50%">
-      <div class="6u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="Name" /></div>
-      <div class="6u$ 12u$(mobile)"><input type="text" class="text" name="email" placeholder="Email" /></div>
+      <div class="6u 12u$(mobile)"><input id="confirm_namel" type="text" class="text" name="name" placeholder="Nome" /></div>
+      <div class="6u$ 12u$(mobile)"><input id="confirm_email" type="text" class="text" name="email" placeholder="Email" /></div>
       <div class="12u$">
-        <textarea name="message" placeholder="Message"></textarea>
+        <textarea id="confirm_message" name="message" placeholder="Note"></textarea>
       </div>
       <div class="12u$">
         <ul class="actions">
           <li><input type="submit" value="Conferma!" /></li>
         </ul>
       </div>
+      <?php wp_nonce_field( 'submit_participation', '_sp' ); ?>
     </div>
   </form>
 </article>
