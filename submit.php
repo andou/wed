@@ -2,7 +2,6 @@
 
 define('WP_USE_THEMES', FALSE);
 
-/** Loads the WordPress Environment and Template */
 require( dirname(__FILE__) . '/wp-load.php' );
 
 header('Content-Type: application/json');
@@ -16,6 +15,9 @@ if (
 } else if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message'])) {
   _wp_wed_out(FALSE, 'Per favore, specifica nome, email e qualche nota :(');
 } else {
+  if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    _wp_wed_out(FALSE, 'Dovresti specificare un indirizzo email valido :(');
+  }
   $res = _wp_wed_submit($_POST['name'], $_POST['email'], $_POST['message']);
   if ($res) {
     $res = _wp_wed_mail_ok($_POST['name'], $_POST['email'], $_POST['message']);
@@ -30,14 +32,14 @@ function _wp_wed_mail_ok($name, $email, $notes) {
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type: text/html; charset=" . get_bloginfo('charset') . "" . "\r\n";
   $headers .= "From: Registration <noreply-registration@marta-e-anto-sposi.eu>" . "\r\n";
-  wp_mail(array("antonio.pastorino@gmail.com"), "$name intende partecipare al matrimonio", "$name [$email] \r\n$notes", $headers);
+  wp_mail(array("antonio.pastorino@gmail.com"), "Matrimonio: $name intende partecipare", "$name [$email] <br/><br/>$notes", $headers);
 }
 
 function _wp_wed_mail_ko($name, $email, $notes) {
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type: text/html; charset=" . get_bloginfo('charset') . "" . "\r\n";
   $headers .= "From: Registration <noreply-registration@marta-e-anto-sposi.eu>" . "\r\n";
-  wp_mail(array("antonio.pastorino@gmail.com"), "[ERR] $name intende partecipare al matrimonio", "$name [$email] \r\n$notes", $headers);
+  wp_mail(array("antonio.pastorino@gmail.com"), "Matrimonio: $name intende partecipare", "$name [$email] <br/><br/>$notes", $headers);
 }
 
 function _wp_wed_submit($name, $email, $notes) {
