@@ -115,7 +115,7 @@ $counter = 0;
       </div>
       <div class="12u$">
         <ul class="actions">
-          <li><a href="#first" class="button style2 scrolly bottom">Torna in cima</a></li>
+          <li><a href="#first" class="button style1 scrolly bottom">Torna in cima</a></li>
         </ul>
       </div>
       <?php wp_nonce_field('submit_participation', '_sp'); ?>
