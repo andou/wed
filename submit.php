@@ -27,11 +27,17 @@ if (
 }
 
 function _wp_wed_mail_ok($name, $email, $notes) {
-  wp_mail(array("antonio.pastorino@gmail.com"), "$name intende partecipare al matrimonio", "$name [$email] $notes");
+  $headers = "MIME-Version: 1.0" . "\r\n";
+  $headers .= "Content-type: text/html; charset=" . get_bloginfo('charset') . "" . "\r\n";
+  $headers .= "From: Registration <noreply-registration@marta-e-anto-sposi.eu>" . "\r\n";
+  wp_mail(array("antonio.pastorino@gmail.com"), "$name intende partecipare al matrimonio", "$name [$email] \r\n$notes", $headers);
 }
 
 function _wp_wed_mail_ko($name, $email, $notes) {
-  wp_mail(array("antonio.pastorino@gmail.com"), "[ERR] $name intende partecipare al matrimonio", "$name [$email] $notes");
+  $headers = "MIME-Version: 1.0" . "\r\n";
+  $headers .= "Content-type: text/html; charset=" . get_bloginfo('charset') . "" . "\r\n";
+  $headers .= "From: Registration <noreply-registration@marta-e-anto-sposi.eu>" . "\r\n";
+  wp_mail(array("antonio.pastorino@gmail.com"), "[ERR] $name intende partecipare al matrimonio", "$name [$email] \r\n$notes", $headers);
 }
 
 function _wp_wed_submit($name, $email, $notes) {
