@@ -134,7 +134,7 @@ $counter = 0;
       ...
     </div>
     <div class="ezmodal-footer">
-      <button type="button" data-dismiss="ezmodal">Close</button>       			
+      <button type="button" data-dismiss="ezmodal">Chiudi</button>       			
     </div>
   </div>
 </div>
