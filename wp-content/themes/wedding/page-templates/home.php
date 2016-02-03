@@ -46,6 +46,9 @@ echo apply_filters('the_content', $page->post_content);
   <p><?php echo get_field("hp_second_descrizione") ?></p>
   <footer>
     <a href="#first" class="button style2 scrolly"><?php echo get_field("hp_second_pulsante_scroll") ?></a>
+  </footer>  
+  <footer>
+    <a href="#confirm_section" class="button style2 scrolly bottom">Conferma la tua partecipazione</a>
   </footer>
 </section>
 
@@ -95,7 +98,7 @@ $counter = 0;
 <!-- Contact -->
 <article class="container box style3">
   <header>
-    <h2>Conferma</h2>
+    <h2 id="confirm_section" >Conferma</h2>
     <p>Scrivete qui il vostro nome, la mail, il numero di persone che parteciperanno al ricevimento, specificando nelle note: quanti adulti, quanti bambini (indicando l’età), eventuali intolleranze o scelte alimentari.</p>
   </header>
   <form id="confirm" method="post" action="submit.php">
@@ -113,6 +116,11 @@ $counter = 0;
       <?php wp_nonce_field('submit_participation', '_sp'); ?>
     </div>
   </form>
+  <div class="12u$">
+    <ul class="actions">
+      <li><a href="#first" class="button style2 scrolly bottom">Torna in cima</a></li>
+    </ul>
+  </div>
 </article>
 
 <button id="ez-modal-button" type="button" ezmodal-target="#ez-modal" style="display:none"></button>
