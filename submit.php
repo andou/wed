@@ -21,7 +21,7 @@ if (
   $res = _wp_wed_submit($_POST['name'], $_POST['email'], $_POST['message']);
   if ($res) {
     $res = _wp_wed_mail_ok($_POST['name'], $_POST['email'], $_POST['message']);
-    _wp_wed_out(TRUE, 'Grazie ' . $_POST['name'] . ' per averci fatto sapere che parteciperai! Ti contatteremo presto!');
+    _wp_wed_out(TRUE, 'Grazie ' . $_POST['name'] . ' per averci fatto sapere che parteciperai! <br/>Ti contatteremo presto!');
   } else {
     $res = _wp_wed_mail_ko($_POST['name'], $_POST['email'], $_POST['message']);
     _wp_wed_out(FALSE, 'Si è verificato un problema, puoi provare più tardi, per favore?');
