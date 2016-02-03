@@ -110,10 +110,26 @@ $counter = 0;
           <li><input type="submit" value="Conferma!" /></li>
         </ul>
       </div>
-      <?php wp_nonce_field( 'submit_participation', '_sp' ); ?>
+      <?php wp_nonce_field('submit_participation', '_sp'); ?>
     </div>
   </form>
 </article>
+
+<button id="ez-modal-button" type="button" ezmodal-target="#ez-modal" style="display:none"></button>
+<div id="ez-modal" class="ezmodal">
+  <div class="ezmodal-container">
+    <div class="ezmodal-header">
+      <div class="ezmodal-close" data-dismiss="ezmodal">x</div>
+      <span id="ezmodal-header">...</span>
+    </div>
+    <div class="ezmodal-content">
+      ...
+    </div>
+    <div class="ezmodal-footer">
+      <button type="button" data-dismiss="ezmodal">Close</button>       			
+    </div>
+  </div>
+</div>
 
 
 <script type="text/javascript">

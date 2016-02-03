@@ -36,6 +36,7 @@
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/jquery.scrolly.min.js"></script>
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/jquery.poptrox.min.js"></script>
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/jquery.form.min.js"></script>
+<script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/ezmodal.min.js"></script>
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/skel.min.js"></script>
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/util.js"></script>
 <!--[if lte IE 8]><script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/ie/respond.min.js"></script><![endif]-->
@@ -44,20 +45,35 @@
 <script>
   // wait for the DOM to be loaded 
   $(document).ready(function() {
+
+
+
+
     // bind 'myForm' and provide a simple callback function 
     $("#confirm").submit(function(event) {
       event.preventDefault();
       var emailaddress = $("#confirm_email").val();
 
       if (!isValidEmailAddress(emailaddress)) {
-        alert('Dovresti specificare un indirizzo email valido :(');
+        $("div.ezmodal-header").html('Qualcosa è andato storto :(');
+        $("div.ezmodal-content").html('Dovresti specificare un indirizzo email valido :(');
+        $("#ez-modal-button").click();
       } else {
         $.ajax({
           url: 'submit.php',
           type: 'post',
           data: $('#confirm').serialize(),
           success: function(data) {
-            alert(data.message);
+            $("div.ezmodal-content").html(data.message);
+            if (data.success) {
+              $("div.ezmodal-header").html('Ci siamo :)');
+              $('#confirm').each(function() {
+                this.reset();
+              });
+            } else {
+              $("div.ezmodal-header").html('Qualcosa è andato storto :(');
+            }
+            $("#ez-modal-button").click();
           }
         });
       }

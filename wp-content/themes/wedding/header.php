@@ -18,6 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/main.css" />
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/ezmodal.min.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/ie8.css" /><![endif]-->
   </head>
 
