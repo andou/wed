@@ -32,11 +32,11 @@ echo apply_filters('the_content', $page->post_content);
         <span class="seconds"></span>
         <div class="smalltext">Secondi</div>
       </div>
-    </div>
-  </header>
-  <footer>
+    </div>  
+    <footer>
     <a href="#banner" style="font-family:bellaboo-regular;" class="button style2 scrolly-middle"><?php echo get_field("hp_first_pulsante_scroll") ?></a>
   </footer>
+  </header>
 </section>
 <!-- Banner -->
 <section id="banner">
