@@ -4,6 +4,11 @@ Theme Name: Wedding
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 @import url("font-awesome.min.css");
 
+@font-face {
+    font-family: bellaboo-regular;
+    src: url(http://marta-e-anto-sposi.eu/wp-content/fonts/bellaboo/webfont/BELLABOO-Regular.woff);
+}
+
 /*
     Overflow by HTML5 UP
     html5up.net | @n33co
