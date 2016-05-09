@@ -82,6 +82,8 @@ body {
   border-radius: 3px;
   background: rgba(88, 45, 1, 0.71);
   display: inline-block;
+  font-family: funsized;
+  font-size: 0.8em;
 }
 
 .smalltext{
@@ -1353,7 +1355,7 @@ body {
 /* Basic */
 
 body {
-  background-color: #183026;
+  background-color: #807343;
   background-image: url("images/overlay.png"), url("../images/bg.jpg");
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -2048,15 +2050,16 @@ button.style3:hover,
   color: #fff;
   text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
   text-align: center;
-  background: #35b88f url("images/banner.svg") bottom center no-repeat;
+  background: rgb(154, 101, 48) url("images/banner.svg") bottom center no-repeat;
   padding: 5em 0 5em 0;
   margin: 0;
   background-size: 125% auto;
 }
 
 #banner .button {
-  color: #35b882;
-  text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
+      color: #808080;
+    text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
+    font-family: bellaboo-regular;
 }
 
 #banner header {
@@ -2298,7 +2301,7 @@ button.style3:hover,
   /* Basic */
 
   body {
-    background-color: #203936;
+    background-color: #807343;
     background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");
     background-repeat: repeat, no-repeat;
     background-size: auto, 100% auto;
