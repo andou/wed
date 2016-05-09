@@ -2303,7 +2303,7 @@ button.style3:hover,
 
   body {
     background-color: rgb(243, 157, 77);
-    background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");
+    background-image: url("images/overlay.png");
     background-repeat: repeat, no-repeat;
     background-size: auto, 100% auto;
     background-position: top left, top center;
