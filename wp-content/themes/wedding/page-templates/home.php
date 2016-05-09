@@ -13,7 +13,7 @@ echo apply_filters('the_content', $page->post_content);
 <section id="header">
   <header>
     <h1><?php echo get_field("hp_first_titolo") ?></h1>
-    <p><?php echo get_field("hp_first_data") ?></p>
+    <p class="wedding-date"><?php echo get_field("hp_first_data") ?></p>
     <p><?php echo get_field("hp_first_mancano") ?></p>
     <div id="clockdiv">
       <div>

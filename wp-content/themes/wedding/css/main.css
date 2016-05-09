@@ -9,6 +9,11 @@ Theme Name: Wedding
     src: url(http://marta-e-anto-sposi.eu/wp-content/fonts/bellaboo/webfont/BELLABOO-Regular.woff);
 }
 
+@font-face {
+    font-family: funsized;
+    src: url(http://marta-e-anto-sposi.eu/wp-content/fonts/funsized/funsized.ttf);
+}
+
 /*
     Overflow by HTML5 UP
     html5up.net | @n33co
@@ -2514,6 +2519,14 @@ button.style3:hover,
     padding: 0 2em 0 2em;
   }
 
+  #header h1{
+        font-family: funsized;
+  }
+  
+  #header p.wedding-date{
+        font-family: bellaboo-regular;
+  }
+  
   #header footer:after {
     bottom: -4.5em;
     left: 50%;
