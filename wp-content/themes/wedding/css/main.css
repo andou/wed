@@ -80,7 +80,7 @@ body {
 #clockdiv div > span{
   padding: 15px;
   border-radius: 3px;
-  background: rgba(88, 45, 1, 0.71);
+  background: rgba(125, 79, 35, 0.71);
   display: inline-block;
   font-family: funsized;
   font-size: 0.8em;
@@ -1355,7 +1355,7 @@ body {
 /* Basic */
 
 body {
-  background-color: #807343;
+  background-color: rgb(243, 157, 77);
   background-image: url("images/overlay.png"), url("../images/bg.jpg");
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -1742,7 +1742,7 @@ button,
   position: relative;
   display: inline-block;
   border: 0;
-  background: #35b88f;
+  background: #808080;
   color: #fff;
   text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
   cursor: pointer;
@@ -1752,6 +1752,7 @@ button,
   text-align: center;
   border-radius: 3em;
   font-weight: 400;
+  font-family: bellaboo-regular;
 }
 
 input[type="button"]:hover,
@@ -1759,7 +1760,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover {
-  background: #45c89f;
+  background: rgb(243, 157, 77);
 }
 
 input[type="button"].style2,
@@ -1990,7 +1991,7 @@ button.style3:hover,
   font-weight: 600;
   font-size: 2.5em;
   letter-spacing: 10px;
-  color: rgb(88, 45, 1);
+  color: rgb(125, 79, 35);
 }
 
 #header header p {
@@ -2050,7 +2051,7 @@ button.style3:hover,
   color: #fff;
   text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
   text-align: center;
-  background: rgb(154, 101, 48) url("images/banner.svg") bottom center no-repeat;
+  background: rgb(243, 157, 77) url("images/banner.svg") bottom center no-repeat;
   padding: 5em 0 5em 0;
   margin: 0;
   background-size: 125% auto;
@@ -2301,7 +2302,7 @@ button.style3:hover,
   /* Basic */
 
   body {
-    background-color: #807343;
+    background-color: rgb(243, 157, 77);
     background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");
     background-repeat: repeat, no-repeat;
     background-size: auto, 100% auto;
