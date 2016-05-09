@@ -12,9 +12,9 @@ echo apply_filters('the_content', $page->post_content);
 ?>
 <section id="header">
   <header>
-    <h1><?php echo get_field("hp_first_titolo") ?></h1>
-    <p class="wedding-date"><?php echo get_field("hp_first_data") ?></p>
-    <p><?php echo get_field("hp_first_mancano") ?></p>
+    <h1 style=" font-family: funsized;"><?php echo get_field("hp_first_titolo") ?></h1>
+    <p style=" font-family: bellaboo-regular;"><?php echo get_field("hp_first_data") ?></p>
+    <p style=" font-family: bellaboo-regular; font-size:1.5em"><?php echo get_field("hp_first_mancano") ?></p>
     <div id="clockdiv">
       <div>
         <span class="days"></span>
@@ -35,7 +35,7 @@ echo apply_filters('the_content', $page->post_content);
     </div>
   </header>
   <footer>
-    <a href="#banner" class="button style2 scrolly-middle"><?php echo get_field("hp_first_pulsante_scroll") ?></a>
+    <a href="#banner" style="font-family:bellaboo-regular;" class="button style2 scrolly-middle"><?php echo get_field("hp_first_pulsante_scroll") ?></a>
   </footer>
 </section>
 <!-- Banner -->
