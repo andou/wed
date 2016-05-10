@@ -12,12 +12,12 @@
     // Parallax background effect?
     parallax: true,
     // Parallax factor (lower = more intense, higher = less intense).
-    parallaxFactor: 10
+    parallaxFactor: 8
 
   };
 
   skel.breakpoints({
-    wide: '(max-width: 1680px)',
+    wide: '(max-width: 1920px)',
     normal: '(max-width: 1080px)',
     narrow: '(max-width: 840px)',
     mobile: '(max-width: 736px)'
