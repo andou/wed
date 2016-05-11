@@ -1515,7 +1515,8 @@ article:last-child {
 
 .image img {
   display: block;
-  width: 100%;
+  width: 200px;
+  height: 150px;
 }
 
 .image.featured {

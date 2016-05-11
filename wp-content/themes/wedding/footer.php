@@ -1,11 +1,9 @@
 <?php
 /**
- * The template for displaying the footer
+ * The template for displaying the footer.
  *
  * Contains the closing of the "site-content" div and all content after.
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
  */
 ?>
@@ -13,16 +11,16 @@
 
 <section id="footer">
   <ul class="icons">
-    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-    <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+    <li><a href="https://www.facebook.com/andoou" class="icon fa-facebook"><span class="label">Anto</span></a></li>
+    <li><a href="https://www.facebook.com/marta.paravidino" class="icon fa-facebook"><span class="label">Marta</span></a></li>
+    <!-- <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
     <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
     <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-    <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+    <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li> -->
   </ul>
   <div class="copyright">
     <ul class="menu">
-      <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      <li>&copy; Marta e Anto Sposi. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
     </ul>
   </div>
 </section>
@@ -43,13 +41,13 @@
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/clock.js"></script>
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/main.js"></script>
 <script>
-  // wait for the DOM to be loaded 
+  // wait for the DOM to be loaded
   $(document).ready(function() {
 
 
 
 
-    // bind 'myForm' and provide a simple callback function 
+    // bind 'myForm' and provide a simple callback function
     $("#confirm").submit(function(event) {
       event.preventDefault();
       var emailaddress = $("#confirm_email").val();
@@ -85,6 +83,6 @@
     return pattern.test(emailAddress);
   }
   ;
-</script> 
+</script>
 </body>
 </html>
