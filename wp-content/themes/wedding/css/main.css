@@ -1809,6 +1809,9 @@ button.style3:hover,
   position: relative;
   margin-top: 9em;
   margin-bottom: 0;
+}
+
+.box.style1, .box.style3 {
   border: 3px solid #808080;
 }
 
