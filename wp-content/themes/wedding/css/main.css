@@ -1989,7 +1989,7 @@ button.style3:hover,
 
 #header header h1 {
   font-weight: 600;
-  font-size: 2.5em;
+  font-size: 3em;
   letter-spacing: 10px;
   color: rgb(125, 79, 35);
 }
@@ -2048,10 +2048,11 @@ button.style3:hover,
 
 #banner {
   position: relative;
-  color: #fff;
+  color: rgb(90,90,90);
+  font-family: bellaboo-regular;
   text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
   text-align: center;
-  background: rgb(243, 157, 77) url("images/banner.svg") bottom center no-repeat;
+  background: rgba(239, 211, 174, 0.8) url("images/banner.svg") bottom center no-repeat;
   padding: 5em 0 5em 0;
   margin: 0;
   background-size: 125% auto;
@@ -2528,7 +2529,7 @@ button.style3:hover,
     bottom: 0em;
     padding: 0 0em 0 0em;
   }
-  
+
   #header footer:after {
     bottom: -7.5em;
     left: 50%;
