@@ -2,12 +2,13 @@
 
 add_action('after_setup_theme', 'remove_admin_bar');
 
-function remove_admin_bar() {
-  show_admin_bar(false);
+function remove_admin_bar()
+{
+    show_admin_bar(false);
 }
 
-if (function_exists("register_field_group")) {
-  register_field_group(array(
+if (function_exists('register_field_group')) {
+    register_field_group(array(
       'id' => 'acf_home-page-fields',
       'title' => 'Home Page Fields',
       'fields' => array(
@@ -26,7 +27,7 @@ if (function_exists("register_field_group")) {
               'placeholder' => '',
               'prepend' => '',
               'append' => '',
-              'formatting' => 'none',
+              'formatting' => 'html',
               'maxlength' => '',
           ),
           array(
