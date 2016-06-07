@@ -48,7 +48,10 @@ echo apply_filters('the_content', $page->post_content);
     <a href="#first" class="button style2 scrolly"><?php echo get_field("hp_second_pulsante_scroll") ?></a>
   </footer>  
   <footer>
-    <a href="#confirm_section" class="button style2 scrolly bottom">Conferma la tua partecipazione</a>
+    <a href="#confirm_section" class="button style2 scrolly">Conferma la tua partecipazione</a>
+  </footer>
+  <footer>
+    <a href="#lista_nozze" class="button style2 scrolly bottom">Lista Viaggio!!</a>
   </footer>
 </section>
 
